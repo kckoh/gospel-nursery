@@ -14,18 +14,21 @@ export default function Map(){
 
   return (
     // Important! Always set the container height explicitly
-    <div style={{ height: '100vh', width: '100%' }}>
-      <GoogleMapReact
-        bootstrapURLKeys={{ key: "" }}
-        defaultCenter={defaultProps.center}
-        defaultZoom={defaultProps.zoom}
-      >
-        <AnyReactComponent
-          lat={59.955413}
-          lng={30.337844}
-          text="My Marker"
-        />
-      </GoogleMapReact>
+
+<section>
+
+<div>
+    <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+        <h2 className="h2 mb-4">Where can you find us?</h2>
+        <p className="text-xl text-gray-400">KG 452 St, Kigali Rwanda</p>
     </div>
+</div>
+<div className="relative flex justify-center">
+
+
+<iframe className="relative flex justify-center items-center " width="560" height="315" src={import.meta.env.VITE_GOOGLE_MAP_KEY} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+
+</div>
+</ section>
   );
 }

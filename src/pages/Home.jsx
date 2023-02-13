@@ -27,13 +27,13 @@ function Home() {
         {/*  Page sections */}
         <HeroHome />
         <FeaturesBlocks />
-        <FeaturesZigZag />
+        {/* <FeaturesZigZag /> */}
         <Testimonials />
         <Map />
  
       </main>
 
-      <Banner />
+      {/* <Banner /> */}
 
       {/*  Site footer */}
       <Footer />
