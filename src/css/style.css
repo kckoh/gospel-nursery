@@ -11,6 +11,8 @@
 
 @import 'tailwindcss/utilities';
 
+ @import 'mdb-react-ui-kit/dist/css/mdb.min.css';  
+
 /* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
 @layer utilities {
     .rtl {
