@@ -1,9 +1,9 @@
 FROM node:16.13.0-alpine as build-stage
 RUN mkdir /app
 WORKDIR /app
-COPY package*.json /app
+COPY package*.json /app/
 RUN yarn 
-COPY . /app
+COPY . /app/
 RUN yarn build
 
 # # # root 에 app 폴더를 생성
