@@ -27,7 +27,6 @@ function Home() {
         {/*  Page sections */}
         <HeroHome />
         <FeaturesBlocks />
-        {/* <FeaturesZigZag /> */}
         <Testimonials />
         <Map />
  

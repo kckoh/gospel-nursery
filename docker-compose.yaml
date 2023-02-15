@@ -1,6 +1,37 @@
 version: '3'
 services:
+  mysql:
+    container_name: mysql
+    #    image: mysql:8.0-oracle
+    build:
+      context: ./db
+      dockerfile: Dockerfile
+    volumes:
+      - mysql_data_dev:/mysql
+    #    env_file:
+    #      - ./.env
+    ports:
+      - 3306:3306
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 3s
+      timeout: 1s
+      retries: 3
+  # nginx and frontend files
   nginx:
-    build: .
+    build: ./nginx
     ports:
       - 80:80
+  backend:
+    container_name: backend
+    build: ./backend
+    entrypoint: /bin/bash
+    command: -c "uvicorn main:app --host 0.0.0.0 --reload"
+    ports:
+      - 8000:8000
+    tty: true
+    depends_on:
+      mysql:
+        condition: service_healthy
+volumes:
+  mysql_data_dev: 

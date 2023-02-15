@@ -11,6 +11,7 @@ import './css/style.css';
 import AOS from 'aos';
 
 import Home from './pages/Home';
+import Gallery from './pages/Gallery';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/gallery" element={<Gallery />} />
       </Routes>
     </>
   );
