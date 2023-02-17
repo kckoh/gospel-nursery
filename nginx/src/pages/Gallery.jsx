@@ -28,11 +28,16 @@ export default function Gallery() {
     <div className="flex flex-col min-h-screen overflow-hidden">
     <Header />
 
-    <MDBRow className='mt-20'>
+    <MDBRow 
+      style={{
+        marginTop: "4.5rem"
+        
+      }}
+    >
       <MDBCol lg={4} md={12} className='mb-4 mb-lg-0'>
         <img
           src='https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp'
-          className='mt-20 w-100 shadow-1-strong rounded mb-4'
+          className='w-100 shadow-1-strong rounded mb-4'
           alt='Boat on Calm Water'
         />
 
