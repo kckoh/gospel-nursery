@@ -23,7 +23,7 @@ function FeaturesBlocks() {
                 <path className="stroke-current text-purple-300" d="M43 42h-9M43 37h-9" strokeLinecap="square" strokeWidth="2" />
               </svg>
               <h4 className="h4 mb-2">Care with love</h4>
-              <p className="text-lg text-gray-400 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+              <p className="text-lg text-gray-400 text-center">We care for our students with love and compassion. We understand the importance of providing a safe and nurturing environment in the classroom where everyone feels respected and valued regardless of background or ability.</p>
             </div>
 
             {/* 2nd item */}
@@ -34,7 +34,7 @@ function FeaturesBlocks() {
                 <path className="stroke-current text-purple-300" d="M26 28h12M26 32h12M26 36h5" strokeWidth="2" strokeLinecap="square" />
               </svg>
               <h4 className="h4 mb-2">Modern Facility</h4>
-              <p className="text-lg text-gray-400 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+              <p className="text-lg text-gray-400 text-center">We have all the amenities to ensure children can have fun, learn and grow safely. For example, the cafeteria provides nutritious meals so that the students can stay healthy, while the playground ensures that they get adequate physical activity.</p>
             </div>
 
             {/* 3rd item */}
@@ -47,8 +47,8 @@ function FeaturesBlocks() {
                   <circle className="stroke-current text-purple-100" cx="11" cy="11" r="11" />
                 </g>
               </svg>
-              <h4 className="h4 mb-2">Public Accredition</h4>
-              <p className="text-lg text-gray-400 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+              <h4 className="h4 mb-2">Public Accreditation</h4>
+              <p className="text-lg text-gray-400 text-center">we are a private kindergarten school located in Kigali, Rwanda. We are accredited by the Ministry of Education, following all the standards provided by the Ministry of Education.</p>
             </div>
 
             {/* 4th item */}
@@ -60,12 +60,12 @@ function FeaturesBlocks() {
                   <circle className="stroke-current text-purple-300" cx="13" cy="9" r="3" />
                 </g>
               </svg>
-              <h4 className="h4 mb-2">Something Else</h4>
-              <p className="text-lg text-gray-400 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+              <h4 className="h4 mb-2">Christain Values</h4>
+              <p className="text-lg text-gray-400 text-center">With Christian values as the foundation, we provide a safe and nurturing environment that fosters social, emotional, physical, and spiritual growth.</p>
             </div>
 
             {/* 5th item */}
-            <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-blocks]">
+            {/* <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-blocks]">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <rect className="fill-current text-purple-600" width="64" height="64" rx="32" />
                 <g strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd">
@@ -75,10 +75,10 @@ function FeaturesBlocks() {
               </svg>
               <h4 className="h4 mb-2">Mom you should come up with this</h4>
               <p className="text-lg text-gray-400 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
-            </div>
+            </div> */}
 
             {/* 6th item */}
-            <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="[data-aos-id-blocks]">
+            {/* <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="500" data-aos-anchor="[data-aos-id-blocks]">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <rect className="fill-current text-purple-600" width="64" height="64" rx="32" />
                 <g transform="translate(21 22)" strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd">
@@ -89,7 +89,7 @@ function FeaturesBlocks() {
               </svg>
               <h4 className="h4 mb-2">Last one</h4>
               <p className="text-lg text-gray-400 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
-            </div>
+            </div>  */}
 
           </div>
 
