@@ -1,25 +1,16 @@
-#spring.jpa.hibernate.ddl-auto=create
-## docker -> 172.17.0.1
-#spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/gospel
-#spring.datasource.username=gospel
-#spring.datasource.password=gospel
-#spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-#spring.jpa.show-sql: true
 spring:
   datasource:
     url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/gospel
     username: gospel
     password: gospel
     driver-class-name: com.mysql.cj.jdbc.Driver
-
-
 cloud:
   aws:
     s3:
-      bucket: gospel-buck
+      bucket: gospel
     credentials:
-      access-key: AKIAXZOHVBYCC7XJG5VO
-      secret-key: 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
+      access-key: AKIAYQFAUAIPZOILHRDJ
+      secret-key: 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
     region:
       static: us-east-1
       auto: false

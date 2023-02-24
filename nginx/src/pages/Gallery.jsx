@@ -9,25 +9,19 @@ import Header from '../partials/Header';
 export default function Gallery() {
     const [images, setImages] = useState([]);
 
-    // useEffect(() => {
-    //     fetch('http://localhost:3000/images')
-    //       .then(response => response.json())
-    //     //   .then(data => setImages(data))
-    //       .then((data) => console.log(data));
-          
-    //   });
-
     useEffect(() => {
-        fetch('http://localhost:3000/images')
+        fetch('http://localhost:8080/upload')
           .then(response => response.json())
+          .then(data => setImages([...images, data ]))
           
           
       }, []);
       
   return (
+    
     <div className="flex flex-col min-h-screen overflow-hidden">
     <Header />
-
+    {images.forEach(ele => console.log(ele))}
     <MDBRow 
       style={{
         marginTop: "4.5rem"
@@ -35,6 +29,7 @@ export default function Gallery() {
       }}
     >
       <MDBCol lg={4} md={12} className='mb-4 mb-lg-0'>
+          
         <img
           src='https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp'
           className='w-100 shadow-1-strong rounded mb-4'

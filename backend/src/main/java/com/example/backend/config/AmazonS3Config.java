@@ -7,10 +7,10 @@ import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-//@Configuration
+@Configuration
 public class AmazonS3Config {
 
-//    @Bean
+    @Bean
     public AmazonS3 amazonS3() {
         return AmazonS3ClientBuilder.standard().withRegion(Regions.US_EAST_1).build();
     }

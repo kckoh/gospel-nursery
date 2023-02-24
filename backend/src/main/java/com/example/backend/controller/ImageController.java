@@ -8,14 +8,16 @@ import com.amazonaws.services.s3.model.S3ObjectSummary;
 import com.example.backend.dto.ImageUrl;
 import com.example.backend.service.ImageService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
-
+@CrossOrigin(origins = "http://127.0.0.1:5173/")
 @RequestMapping(value = "/upload")
 @RequiredArgsConstructor
 @RestController
@@ -24,7 +26,7 @@ public class ImageController {
     private final ImageService imageService;
 
     @GetMapping
-    public List<ImageUrl> getImages() {
+    public Set<String> getImages() {
         return imageService.getImages();
 
     }

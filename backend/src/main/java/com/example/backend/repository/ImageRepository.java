@@ -1,9 +1,7 @@
 package com.example.backend.repository;
 
-import com.example.backend.dto.ImageUrl;
-
-import java.util.List;
+import java.util.Set;
 
 public interface ImageRepository {
-    List<ImageUrl> getImages();
+    Set<String> getImages();
 }
