@@ -9,8 +9,8 @@ cloud:
     s3:
       bucket: gospel
     credentials:
-      access-key: AKIAYQFAUAIPZOILHRDJ
-      secret-key: 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
+      access-key: 
+      secret-key: 
     region:
       static: us-east-1
       auto: false
