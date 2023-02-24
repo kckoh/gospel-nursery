@@ -25,7 +25,7 @@ public class ImageRepositoryS3Impl implements ImageRepository {
 
         ListObjectsV2Result result = amazonS3.listObjectsV2(bucketName);
         List<S3ObjectSummary> objects = result.getObjectSummaries();
-        
+
         for (S3ObjectSummary os : objects) {
             images.add(baseUrl + os.getKey());
         }
