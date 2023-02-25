@@ -23,6 +23,8 @@ services:
     ports:
       - 80:80
       - 443:443
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt
   backend:
     container_name: backend
     restart: always
