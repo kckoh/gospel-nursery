@@ -1,9 +1,10 @@
-spring:
-  datasource:
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/gospel
-    username: gospel
-    password: gospel
-    driver-class-name: com.mysql.cj.jdbc.Driver
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/gospel
+##    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/gospel
+#    username: gospel
+#    password: gospel
+#    driver-class-name: com.mysql.cj.jdbc.Driver
 cloud:
   aws:
     s3:
