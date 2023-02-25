@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/gospel
+    username: gospel
+    password: gospel
+    driver-class-name: com.mysql.cj.jdbc.Driver
+cloud:
+  aws:
+    s3:
+      bucket: gospel
+    credentials:
+      access-key: AKIAYQFAUAIPZOILHRDJ
+      secret-key: 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
+    region:
+      static: us-east-1
+      auto: false
+    stack:
+      auto: false
+logging:
+  level:
+    com:
+      amazonaws:
+        util:
+          EC2MetadataUtils: ERROR

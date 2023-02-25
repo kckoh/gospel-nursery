@@ -29,19 +29,14 @@ export default function Gallery() {
      
       {images.map(ele => 
         {
-          return <MDBCol lg={3} md={12} className='mb-4 mb-lg-0'>
+          return <MDBCol lg={6} md={16} className='mb-4 mb-lg-0'>
           <img
             src={ele}
             className='w-100 shadow-1-strong rounded mb-4'
-            alt='Boat on Calm Water'
           />
-  
         </MDBCol>
 
-        }
-        
-        
-        )}
+        })}
   
 
         {/* <MDBCol lg={4} md={12} className='mb-4 mb-lg-0'>

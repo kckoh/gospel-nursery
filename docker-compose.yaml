@@ -23,16 +23,14 @@ services:
     ports:
       - 80:80
       - 443:443
-  # backend:
-  #   container_name: backend
-  #   build: ./backend
-  #   entrypoint: /bin/bash
-  #   command: -c "uvicorn main:app --host 0.0.0.0 --reload"
-  #   ports:
-  #     - 8000:8000
-  #   tty: true
-  #   depends_on:
-  #     mysql:
-  #       condition: service_healthy
+  backend:
+    container_name: backend
+    build: ./backend
+    ports:
+      - 8080:8080
+    tty: true
+    # depends_on:
+    #   mysql:
+    #     condition: service_healthy
 volumes:
   mysql_data_dev: 
