@@ -18,14 +18,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-@CrossOrigin(origins = "http://127.0.0.1:5173/")
-@RequestMapping(value = "/images")
+@CrossOrigin(origins = "https://www.gospelnursery.com/")
+@RequestMapping(value = "/api")
 @RequiredArgsConstructor
 @RestController
 public class ImageController {
     private final ImageService imageService;
-
     @GetMapping
+    public String hello(){
+        return "Hello world!";
+    }
+
+    @GetMapping("/images")
     public Set<String> getImages() {
         return imageService.getImages();
     }
