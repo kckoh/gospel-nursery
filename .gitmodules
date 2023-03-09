@@ -1,0 +1,3 @@
+[submodule "gospel-nursery-frontend"]
+	path = gospel-nursery-frontend
+	url = https://github.com/kckoh/gospel-nursery-frontend.git
