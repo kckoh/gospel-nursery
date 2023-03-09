@@ -6,12 +6,12 @@ services:
     build:
       context: ./db
       dockerfile: Dockerfile
+    ports:
+      - 3306:3306
     volumes:
       - mysql_data_dev:/mysql
     #    env_file:
     #      - ./.env
-    ports:
-      - 3306:3306
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 3s
@@ -23,16 +23,17 @@ services:
     ports:
       - 80:80
       - 443:443
-  # backend:
-  #   container_name: backend
-  #   build: ./backend
-  #   entrypoint: /bin/bash
-  #   command: -c "uvicorn main:app --host 0.0.0.0 --reload"
-  #   ports:
-  #     - 8000:8000
-  #   tty: true
-  #   depends_on:
-  #     mysql:
-  #       condition: service_healthy
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt
+  backend:
+    container_name: backend
+    restart: always
+    build: ./backend
+    ports:
+      - 8080:8080
+    tty: true
+    # depends_on:
+    #   mysql:
+    #     condition: service_healthy
 volumes:
   mysql_data_dev: 
