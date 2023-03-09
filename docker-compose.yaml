@@ -32,8 +32,8 @@ services:
     ports:
       - 8080:8080
     tty: true
-    depends_on:
-      mysql:
-        condition: service_healthy
+    # depends_on:
+    #   mysql:
+    #     condition: service_healthy
 volumes:
   mysql_data_dev: 

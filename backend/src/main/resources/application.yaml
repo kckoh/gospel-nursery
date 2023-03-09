@@ -5,6 +5,7 @@
 #    username: gospel
 #    password: gospel
 #    driver-class-name: com.mysql.cj.jdbc.Driver
+
 cloud:
   aws:
     s3:
@@ -23,3 +24,12 @@ logging:
       amazonaws:
         util:
           EC2MetadataUtils: ERROR
+
+---
+
+spring:
+  profiles:
+    active: "dev"
+
+---
+
