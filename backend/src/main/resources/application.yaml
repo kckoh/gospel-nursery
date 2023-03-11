@@ -11,8 +11,8 @@ cloud:
     s3:
       bucket: gospel
     credentials:
-      access-key: 
-      secret-key: 
+      access-key: {AWS_ACCESS_KEY_ID}
+      secret-key: {AWS_SECRET_ACCESS_KEY}
     region:
       static: us-east-1
       auto: false
@@ -24,7 +24,6 @@ logging:
       amazonaws:
         util:
           EC2MetadataUtils: ERROR
-
 ---
 
 spring:
